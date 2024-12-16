@@ -9,8 +9,8 @@ return {
     [4] = "Back",   -- BACK
     [19] = "Up",    -- DPAD_UP
     [20] = "Down",  -- DPAD_UP
-    [21] = "Left",  -- DPAD_LEFT
-    [22] = "Right", -- DPAD_RIGHT
+    -- [21] = "Left",  -- DPAD_LEFT
+    -- [22] = "Right", -- DPAD_RIGHT
     [23] = "Press", -- DPAD_CENTER
     [24] = "LPgBack", -- VOLUME_UP
     [25] = "LPgFwd",  -- VOLUME_DOWN
@@ -31,4 +31,8 @@ return {
     [104] = "LPgBack", -- T68 PageUp
     [109] = "LPgFwd",  -- T68 PageDown
     [139] = "Menu",    -- T68 Menu
+
+    -- WORKAROUND, see https://github.com/koreader/koreader/issues/12908
+    [21] = "LPgBack", -- Tolino page turn as dpad left/right
+    [22] = "LPgFwd",
 }
